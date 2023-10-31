@@ -40,7 +40,7 @@ export default function Projects() {
                 
                 <div className='grid grid-cols-1 gap-y-10 lg:grid-cols-3 gap-x-6'>
                 
-                   {projects.map((project,index)=><a href="https://earnest-madeleine-e4b5c0.netlify.app/" target='_blank' referrerPolicy='no-referrer'>
+                   {projects.map((project,index)=><a href={project.link} target='_blank' referrerPolicy='no-referrer'>
                    <div  className='relative w-96 h-64 overflow-hidden '>
                         <motion.img src={project.img} whileHover={{ scale: 1.2 }}
                 transition={{ duration: 0.5 }}
