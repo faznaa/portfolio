@@ -1,4 +1,3 @@
-import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import { motion } from "framer-motion"
 import Link from 'next/link'
 

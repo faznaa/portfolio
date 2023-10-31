@@ -1,6 +1,6 @@
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import { motion } from "framer-motion"
-import { FadeIn } from '../FadeIn'
+import FadeIn from '../FadeIn'
 
 const projects = [
     {
