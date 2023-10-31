@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <div className={`${inter.className}`}>
       <Head>
+        <title>Portfolio - Fazna</title>
         <meta name='title' content='Fazna Harees - Fullstack Developer' />
         <meta name="description"
         content='Need your website ready? I can help you with that. I am a fullstack developer based in Bangalore, Kerala, IN. I specialize in creating responsive websites, landing pages and AI Chatbots.' />
