@@ -1,9 +1,11 @@
 import { motion } from "framer-motion"
 import Link from 'next/link'
-
+import Image from "next/image"
+import { LinkedInIcon, EmailIcon, GithubIcon } from '../Icons'
 export default function Hero() {
   return (
-    <div className=" min-h-screen animate-shiny bg-gradient-to-tr from-[#FF0A54] to-pink-600">
+    // bg-gradient-to-tr from-[#FF0A54] to-pink-600
+    <div className=" min-h-screen animate-shiny bg-white">
       <div className="relative isolate overflow-hidden">
         <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-30">
           <div className="px-6 lg:px-0 lg:pt-4">
@@ -41,7 +43,7 @@ export default function Hero() {
                 <div className="mt-24 sm:mt-32 lg:mt-32 h-20 mb-10">
                 </div>
                 <Link href="#projects" className="relative px-6 py-3 font-bold text-black group">
-<span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-[#FF85A1] group-hover:translate-x-0 group-hover:translate-y-0"></span>
+<span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-indigo-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
 <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
 <span className="relative">Browse Projects</span>
 </Link>
@@ -57,6 +59,21 @@ export default function Hero() {
                   Fazna Harees - <br/> Fullstack Developer
                 </h1>
                 
+                <div className="flex justify-start items-center gap-x-4 mt-10">
+                  <a href="https://www.linkedin.com/in/faznaharees/" target="_blank" rel="noopener noreferrer">
+                    <LinkedInIcon className="w-6 h-6 fill-indigo-600" />
+                  </a>
+                  <a href="https://github.com/faznaa" target="_blank" rel="noopener noreferrer">
+                    <GithubIcon className="w-6 h-6 fill-indigo-600" />
+                  </a>
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <EmailIcon className="w-6 h-6 fill-indigo-600 text-indigo-600" />
+                  </a>
+                {/* <Image alt="email" src={linkedinIcon} className='w-6 h-6 fill-indigo-500'/>
+                <Image alt="email" src={emailIcon} className='w-6 h-6 text-indigo-500'/>
+
+                  <Image alt="email" src={emailIcon} className='w-6 h-6 text-indigo-500'/> */}
+                </div>
                
               </div>
             </div>

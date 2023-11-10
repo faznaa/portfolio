@@ -17,8 +17,17 @@ const config: Config = {
         shiny: 'shiny 3s ease-in-out infinite',
         typing: 'typing 2s steps(20) infinite alternate',
         blink: 'blink .7s infinite',
+        textreveal: "textreveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
       },
       keyframes: {
+        textreveal: {
+          "0%": {
+            transform: "translate(0, 100%)",
+          },
+          "100%": {
+            transform: "translate(0, 0)",
+          },
+        },
         typing: {
           '0%': {
             width: '0%',

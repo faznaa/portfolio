@@ -25,7 +25,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="bg-[#FF7096] min-h-screen relative" id="projects">
+    <div className="bg-gray-200 min-h-screen relative" id="projects">
       <div className="relative isolate overflow-hidden z-20">
         <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:max-w-9xl lg:py-30">
           <div className="px-6 lg:px-0 lg:pt-20">
@@ -44,10 +44,10 @@ export default function Projects() {
                    <div  className='relative w-96 h-64 overflow-hidden '>
                         <motion.img src={project.img} whileHover={{ scale: 1.2 }}
                 transition={{ duration: 0.5 }}
-                className='z-10 border border-8 border-black grayscale w-full h-full object-cover'/>
-                        <div  className='absolute mix-blend-color z-0 top-0 bg-gradient-to-tr to-[#FF0A54] from-[#FF7096] w-full h-full '/>
+                className='z-10 grayscale w-full h-full object-cover '/>
+                        {/* <div  className='absolute mix-blend-color z-0 top-0 bg-gradient-to-tr to-[#FF0A54] from-[#004E98] w-full h-full '/> */}
                     </div>
-                    <h1 className='text-lg sm:text-3xl text-black tracking-tight font-bold mt-5'>{project.title}</h1>
+                    <h1 className='text-lg sm:text-3xl text-[#004E98] tracking-tight font-bold mt-5 '>{project.title}</h1>
                     <p className='text-md sm:text-lg sm:font-semibold tracking-tight text-black'>
                         {project.description}
                     </p>
