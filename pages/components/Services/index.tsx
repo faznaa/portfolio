@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import Link from 'next/link'
 import Image from "next/image"
-import { LinkedInIcon, EmailIcon, GithubIcon } from '../Icons'
+
 export default function Services() {
   return (
     // bg-gradient-to-tr from-[#FF0A54] to-pink-600

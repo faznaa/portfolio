@@ -1,4 +1,4 @@
-export const TextReveal = ({children}:any) => {
+const TextReveal = ({children}:any) => {
 //   consttext="helo h fafk wfw "
 const text = "Text Reveal Animation 💫";
     return (
@@ -17,3 +17,6 @@ const text = "Text Reveal Animation 💫";
       </>
     );
   };
+
+
+  export default TextReveal;

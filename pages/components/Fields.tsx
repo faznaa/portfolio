@@ -37,3 +37,5 @@ export function SelectField({ id, label, className = '', ...props }:any) {
     </div>
   )
 }
+
+export default function Form() { return <></>}

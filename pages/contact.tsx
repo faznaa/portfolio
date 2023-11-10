@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 import { SelectField, TextField } from './components/Fields'
-import { BackgroundLayout } from './components/BackgroundImage'
+import BackgroundLayout from './components/BackgroundImage'
 
 export default function Register() {
   const [data,setData] = useState({

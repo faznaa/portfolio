@@ -3,7 +3,7 @@ import Image from 'next/image'
 import backgroundImage from '../../public/assets/black_cross.png'
 import circle from '../../public/assets/circle-scatter-haikei(2).svg'
 
-export function BackgroundLayout({ children }:any) {
+export default function BackgroundLayout({ children }:any) {
   return (
     <>
       <div className=" relative flex min-h-screen justify-center md:px-12 lg:px-0">
