@@ -5,6 +5,7 @@ import Description from './components/Description'
 import Projects from './components/Projects'
 import Head from 'next/head'
 import Hire from './components/Hire'
+import Services from './components/Services'
 
 const inter = Unbounded({ subsets: ['latin'] })
 
@@ -20,7 +21,9 @@ export default function Home() {
       <Hero />
       <Description />
       <Projects />
+      <Services />
       <Hire />
+
     </div>
   )
 }

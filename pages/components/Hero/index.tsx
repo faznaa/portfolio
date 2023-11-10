@@ -66,7 +66,7 @@ export default function Hero() {
                   <a href="https://github.com/faznaa" target="_blank" rel="noopener noreferrer">
                     <GithubIcon className="w-6 h-6 fill-indigo-600" />
                   </a>
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:fasnahareesfasna@gmail.com?subject=Project%20Name&body=Hi%Fazna," target="_blank" rel="noopener noreferrer">
                     <EmailIcon className="w-6 h-6 fill-indigo-600 text-indigo-600" />
                   </a>
                 {/* <Image alt="email" src={linkedinIcon} className='w-6 h-6 fill-indigo-500'/>
