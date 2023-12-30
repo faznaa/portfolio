@@ -1,13 +1,14 @@
 import Image from 'next/image'
-import { Unbounded } from 'next/font/google'
+import { Unbounded, Montserrat } from 'next/font/google'
 import Hero from './components/Hero'
 import Description from './components/Description'
 import Projects from './components/Projects'
 import Head from 'next/head'
 import Hire from './components/Hire'
 import Services from './components/Services'
+import WorkExperience from './components/Experience'
 
-const inter = Unbounded({ subsets: ['latin'] })
+const inter = Montserrat({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
       <Hero />
       <Description />
+      <WorkExperience />
       <Projects />
       <Services />
       <Hire />

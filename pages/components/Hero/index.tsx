@@ -17,7 +17,7 @@ const GithubIcon = (props:any) => <svg xmlns="http://www.w3.org/2000/svg" width=
 export default function Hero() {
   return (
     // bg-gradient-to-tr from-[#FF0A54] to-pink-600
-    <div className=" min-h-screen animate-shiny bg-white">
+    <div className=" bg-gradient-to-r from-rose-100 to-teal-100 min-h-screen animate-shiny bg-white">
       <div className="relative isolate overflow-hidden">
         <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-30">
           <div className="px-6 lg:px-0 lg:pt-4">
@@ -71,9 +71,9 @@ export default function Hero() {
                   Fazna Harees - <br/> Fullstack Developer
                 </h1>
                 
-                <div className="flex justify-start items-center gap-x-4 mt-10">
+                <div className="flex justify-start items-center gap-x-4 mt-10 text-black">
                   <a href="https://www.linkedin.com/in/faznaharees/" target="_blank" rel="noopener noreferrer">
-                    <LinkedInIcon className="w-6 h-6 fill-indigo-600" />
+                    <LinkedInIcon className="w-4 h-4 fill-indigo-600 " />
                   </a>
                   <a href="https://github.com/faznaa" target="_blank" rel="noopener noreferrer">
                     <GithubIcon className="w-6 h-6 fill-indigo-600" />
