@@ -88,10 +88,12 @@ export default function Skills() {
     }
   return (
     <div className="bg-[#6e9fc1] min-h-screen relative p-4 sm:p-10 sm:pt-16" id="skills">
+               <div className='sm:px-6 md:px-12 lg:px-20'>
+
+        <h2 className="text-3xl sm:text-6xl font-bold tracking-tight text-white pt-6 ">Skills</h2>
        <FadeIn>
-       <div className='sm:px-20'>
-            {skills.map((skill,index)=><div className='flex flex-col w-full  lg:flex-row justify-between sm:gap-x-6 items-center lg:items-start my-10'>
-                <div className='sm:w-8/12 flex flex-col justify-between items-center lg:items-start'>
+            {skills.map((skill,index)=><div className='flex  w-full flex-row justify-between sm:gap-x-6 items-center lg:items-start my-10'>
+                <div className='sm:w-8/12 flex flex-col justify-between items-start'>
                     <h1 className='text-lg sm:text-2xl text-white tracking-tight font-semibold mb-2 '>{skill.title}</h1>
                     <div className='flex flex-wrap gap-x-2 gap-y-4'>                    {skill.skills.map((skill,sIndex)=><div style={{background:randomPastelHex()}} className={`text-md sm:text-lg tracking-tight text-black rounded-xl px-4 py-2 border border-black  `}> 
 
@@ -99,8 +101,9 @@ export default function Skills() {
                      </div>)}
 </div>
                     </div></div>)}
-        </div>
        </FadeIn>
+       </div>
+
     </div>
   )
 }

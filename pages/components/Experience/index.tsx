@@ -70,18 +70,25 @@ export default function WorkExperience() {
         }
     ]
   return (
-    <div className="bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-orange-100 via-violet-200 to-violet-100 min-h-screen relative p-4 sm:p-10 sm:pt-16" id="experience">
+    <div className="bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-orange-100 via-violet-200 to-violet-100 min-h-screen relative p-4 pt-8 sm:p-10 sm:pt-16" id="experience">
         <h2 className="text-3xl sm:text-6xl font-bold tracking-tight text-black sm:px-20 ">Experience</h2>
    <FadeIn>
-   <div className='sm:px-20'>
-     {experience.map((exp,index)=><div className='flex flex-col w-full  lg:flex-row justify-between sm:gap-x-6 items-center lg:items-start my-10'>
-                <div className='sm:w-8/12 flex flex-col justify-between items-center lg:items-start'>
+   <div className='md:px-20'>
+     {experience.map((exp,index)=><div className='flex flex-col w-full  sm:flex-row justify-between sm:gap-x-6 items-center sm:items-start my-10'>
+                <div className='sm:w-8/12 flex flex-col justify-between items-start'>
                     <h1 className='text-lg sm:text-2xl text-[#004E98] tracking-tight font-semibold mb-2 '>{exp.title}</h1>
-                    
+                    <div className='block sm:hidden mb-4'>
+                   
+                        <p className='text-md sm:text-lg sm:font-semibold tracking-tight text-indigo-600'>
+                        {exp.company}
+                    </p>
+                    <p className='text-md sm:text-lg sm:font-semibold tracking-tight text-black text-right'>
+                        {exp.from} - {exp.to}
+                        </p></div>
                     <ul className='list-disc ml-4'>
                         {exp.points.map((point,index)=><li className='text-md sm:text-lg tracking-tight text-black '> {point}</li>)}</ul>
                     </div>
-                    <div className='sm:w-4/12 text-right '>
+                    <div className='sm:w-4/12 text-right hidden sm:block'>
                     <p className='text-md sm:text-lg sm:font-semibold tracking-tight text-black text-right'>
                         {exp.from} - {exp.to}
                         </p>
