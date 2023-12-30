@@ -1,4 +1,5 @@
 import React from 'react'
+import FadeIn from '../FadeIn'
 
 export default function WorkExperience() {
 //     Jul/2022 – Current Senior Fullstack Developer Toyow
@@ -71,13 +72,14 @@ export default function WorkExperience() {
   return (
     <div className="bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-orange-100 via-violet-200 to-violet-100 min-h-screen relative p-4 sm:p-10 sm:pt-16" id="experience">
         <h2 className="text-3xl sm:text-6xl font-bold tracking-tight text-black sm:px-20 ">Experience</h2>
-     <div className='sm:px-20'>
+   <FadeIn>
+   <div className='sm:px-20'>
      {experience.map((exp,index)=><div className='flex flex-col w-full  lg:flex-row justify-between sm:gap-x-6 items-center lg:items-start my-10'>
                 <div className='sm:w-8/12 flex flex-col justify-between items-center lg:items-start'>
                     <h1 className='text-lg sm:text-2xl text-[#004E98] tracking-tight font-semibold mb-2 '>{exp.title}</h1>
                     
-                    <div>
-                        {exp.points.map((point,index)=><p className='text-md sm:text-lg tracking-tight text-black '> - {point}</p>)}</div>
+                    <ul className='list-disc ml-4'>
+                        {exp.points.map((point,index)=><li className='text-md sm:text-lg tracking-tight text-black '> {point}</li>)}</ul>
                     </div>
                     <div className='sm:w-4/12 text-right '>
                     <p className='text-md sm:text-lg sm:font-semibold tracking-tight text-black text-right'>
@@ -90,6 +92,7 @@ export default function WorkExperience() {
                     
                     </div>)}
      </div>
+   </FadeIn>
 
 
      </div>

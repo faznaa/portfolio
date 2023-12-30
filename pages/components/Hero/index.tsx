@@ -73,13 +73,13 @@ export default function Hero() {
                 
                 <div className="flex justify-start items-center gap-x-4 mt-10 text-black">
                   <a href="https://www.linkedin.com/in/faznaharees/" target="_blank" rel="noopener noreferrer">
-                    <LinkedInIcon className="w-4 h-4 fill-indigo-600 " />
+                    <LinkedInIcon className="w-5 h-5 fill-gray-600 " />
                   </a>
                   <a href="https://github.com/faznaa" target="_blank" rel="noopener noreferrer">
-                    <GithubIcon className="w-6 h-6 fill-indigo-600" />
+                    <GithubIcon className="w-6 h-6 fill-gray-600" />
                   </a>
                   <a href="mailto:fasnahareesfasna@gmail.com?subject=Project%20Name&body=Hi%Fazna," target="_blank" rel="noopener noreferrer">
-                    <EmailIcon className="w-6 h-6 fill-indigo-600 text-indigo-600" />
+                    <EmailIcon className="w-6 h-6 fill-gray-600 text-indigo-600" />
                   </a>
                 {/* <Image alt="email" src={linkedinIcon} className='w-6 h-6 fill-indigo-500'/>
                 <Image alt="email" src={emailIcon} className='w-6 h-6 text-indigo-500'/>

@@ -5,7 +5,7 @@ import Typewriter from '../Typewriter'
 
 export default function Description() {
   return (
-    <div className="bg-[#004E98] min-h-screen relative">
+    <div className="bg-[#004E98] min-h-screen relative" id='about'>
       <div className="relative isolate overflow-hidden z-20">
         <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:max-w-9xl lg:py-30">
           <div className="px-6 lg:px-0 lg:pt-20">

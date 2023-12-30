@@ -7,6 +7,8 @@ import Head from 'next/head'
 import Hire from './components/Hire'
 import Services from './components/Services'
 import WorkExperience from './components/Experience'
+import Skills from './components/Skills'
+import Navbar from './components/Navbar'
 
 const inter = Montserrat({ subsets: ['latin'] })
 
@@ -19,9 +21,11 @@ export default function Home() {
         <meta name="description"
         content='Need your website ready? I can help you with that. I am a fullstack developer based in Bangalore, IN. I specialize in creating responsive websites, landing pages and AI Chatbots.' />
       </Head>
+      <Navbar />
       <Hero />
       <Description />
       <WorkExperience />
+      <Skills/>
       <Projects />
       <Services />
       <Hire />
