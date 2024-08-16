@@ -5,20 +5,22 @@ import Image from "next/image"
 export default function Services() {
   return (
     // bg-gradient-to-tr from-[#FF0A54] to-pink-600
-    <div id="#services" className=" min-h-screen bg-indigo-300 bg-[#C0C0C0]">
-      <div className="relative isolate overflow-hidden">
+    <div id="#services" className="relative min-h-screen bg-black bg-dot-white text-white ">
+      {/* radial shadow of black  */}
+      <div className="z-10 absolute pointer-events-none inset-0 flex items-center justify-center bg-black  [mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
+      <div className="relative isolate overflow-hidden z-20">
         <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:gap-x-8 lg:px-8 lg:py-30">
           <div className="px-6 lg:px-0 lg:pt-4">
             
-            <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Services</h1>
-            <p className="text-gray-900 font-semibold  mt-10">Have a project in mind? </p>
+            <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl">Services</h1>
+            <p className="text-gray-200 font-semibold  mt-10">Have a project in mind? </p>
            <motion.button 
                 whileHover={{
                     scale: 1.1,
                     transition: { duration: 0.2 },
                   }}
                   whileTap={{ scale: 0.9 }}
-                className='bg-black text-indigo-300 px-4 py-2 text-lg mt-2 '>
+                className='bg-white text-gray-800 px-4 py-2 text-lg mt-2 '>
                   <Link href="/contact">Contact Me</Link>
                 </motion.button>
            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10">

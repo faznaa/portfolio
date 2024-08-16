@@ -9,6 +9,7 @@ import Services from './components/Services'
 import WorkExperience from './components/Experience'
 import Skills from './components/Skills'
 import Navbar from './components/Navbar'
+import ExperienceNew from './components/ExperienceNew'
 
 const inter = Montserrat({ subsets: ['latin'] })
 
@@ -25,6 +26,7 @@ export default function Home() {
       <Hero />
       <Description />
       <WorkExperience />
+      {/* <ExperienceNew /> */}
       <Skills/>
       <Projects />
       <Services />

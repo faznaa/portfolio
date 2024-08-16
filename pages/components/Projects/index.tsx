@@ -83,6 +83,34 @@ const projects = [
     }
 ]
 
+function HoverImage({src}:any) {
+  const [hovered, setHovered] = useState(false);
+  
+
+  return (
+    <div
+      className="w-96 h-64"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      {/* {hovered? <img
+        src={src}
+        alt="Switchable Image"
+        className="w-full h-full object-cover"
+      /> : <div className='w-full h-full bg-gradient-to-r from-gray-700 via-gray-900 to-black'>
+          Klashra
+        </div>} */}
+        {/* <div className={`absolute w-full h-full bg-gradient-to-r from-gray-700 via-gray-900 to-black opacity-0`}></div> */}
+        <motion.img
+        whileHover={{ scale: 1.1 }}
+        src={src}
+        alt="Switchable Image"
+        className="w-full h-full object-cover"
+      /> 
+    </div>
+  );
+}
+
 export default function Projects() {
   const allTags = [
     'web','bot','ai','llm'
@@ -100,7 +128,7 @@ export default function Projects() {
   }
   const [myTag,setMyTag] = useState('')
   return (
-    <div className="bg-gray-200 min-h-screen relative" id="projects">
+    <div className="bg-gradient-to-b from-black via-gray-800 to-black text-gray-200 min-h-screen relative" id="projects">
       <div className="relative isolate overflow-hidden z-20">
         <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:max-w-9xl lg:py-30">
           <div className="px-6 lg:px-0 lg:pt-20">
@@ -109,30 +137,34 @@ export default function Projects() {
              <div className="w-full relative">
                 
              
-                <h1 className="my-10  text-3xl sm:text-6xl font-bold tracking-tight text-black  ">
+                <h1 className="my-10  text-3xl sm:text-6xl font-bold tracking-tight text-white  ">
                  Projects
                 </h1>
                 
                 {/* Tags  */}
                 <div className='flex flex-wrap gap-x-2 gap-y-4 mb-8'>
-                  {tags.map((tag,index)=><button onClick={() => setMyTag(tag.name)} className={`text-md sm:text-lg tracking-tight text-black ${tag.name==myTag ? 'bg-violet-400':'bg-violet-300'} rounded-xl px-4 py-2 border-2 hover:bg-violet-400 hover:border-violet-600 cursor-pointer transition-all duration-300 border-violet-400  `}>
+                  {tags.map((tag,index)=><button onClick={() => setMyTag(tag.name)} className={`text-md sm:text-lg tracking-tight text-white ${tag.name==myTag ? 'bg-gray-900':'bg-gray-700'} rounded-xl px-4 py-2 border-2 hover:bg-black hover:border-white cursor-pointer transition-all duration-300 border-gray-400  `}>
                     {tag.name}
                   </button>)}
-                  {myTag && <button onClick={() => setMyTag('')}  className='text-violet-400'>
+                  {myTag && <button onClick={() => setMyTag('')}  className='text-gray-400'>
                     <XMarkIcon className='h-5 w-5'/>
                     </button>
                  } </div>
                 <div className='grid grid-cols-1 gap-y-10 lg:grid-cols-3 gap-x-6'>
                 
                    {projects.filter(project => myTag ? project.tags.includes(myTag): true).map((project,index)=><a href={project.link} target='_blank' referrerPolicy='no-referrer'>
-                   <div  className='relative w-96 h-48 overflow-hidden '>
-                        <motion.img src={project.img} whileHover={{ scale: 1.1 }}
+                   <div  className='relative w-96 h-48 overflow-hidden rounded-3xl'>
+                        {/* <motion.img 
+                        src={project.img} 
+                        whileHover={{ scale: 1.1 }}
+
                 transition={{ duration: 0.5 }}
-                className='z-10 w-full h-full object-cover '/>
+                className='z-10 w-full h-full object-cover '/> */}
+                <HoverImage src={project.img}/>
                         {/* <div  className='absolute mix-blend-color z-0 top-0 bg-gradient-to-tr to-[#FF0A54] from-[#004E98] w-full h-full '/> */}
                     </div>
-                    <h1 className='text-lg sm:text-3xl text-[#004E98] tracking-tight font-bold mt-5 '>{project.title}</h1>
-                    <p className='text-md sm:text-lg sm:font-semibold tracking-tight text-black'>
+                    <h1 className='text-lg sm:text-3xl text-[#cfe8ff] tracking-tight font-bold mt-5 '>{project.title}</h1>
+                    <p className='text-md sm:text-lg sm:font-semibold tracking-tight text-gray-300'>
                         {project.description}
                     </p>
                    </a>)}
