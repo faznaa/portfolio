@@ -97,3 +97,11 @@ export function HoverBorderGradient({
     </Tag>
   );
 }
+
+const MainDiv = () => {
+  <div>
+    hello
+  </div>
+}
+
+export default MainDiv

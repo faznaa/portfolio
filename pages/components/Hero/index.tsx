@@ -105,6 +105,15 @@ export default function Hero() {
                 className="mt-10 text-4xl  font-medium tracking-tight text-gray-100 sm:text-6xl">
                   Fazna Harees - <br/><span className="font-medium italic">Fullstack Developer</span> 
                 </motion.h1>
+                <motion.button 
+                whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.2 },
+                  }}
+                  whileTap={{ scale: 0.9 }}
+                className='bg-black border-2 border-white text-gray-300 px-4 py-2 text-lg mt-10 '>
+                  <Link href="/Faznaharees_Resume.pdf" download>Resume icon</Link>
+                </motion.button>
                 
                 <div className="flex justify-start items-center gap-x-4 mt-10 text-white">
                   <a href="https://www.linkedin.com/in/faznaharees/" target="_blank" rel="noopener noreferrer">

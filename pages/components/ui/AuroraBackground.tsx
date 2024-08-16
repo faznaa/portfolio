@@ -55,3 +55,11 @@ export const AuroraBackground = ({
     </main>
   );
 };
+
+const MainDiv = () => {
+  <div>
+    hello
+  </div>
+}
+
+export default MainDiv

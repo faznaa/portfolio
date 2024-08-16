@@ -5,7 +5,7 @@ import { cubicBezier, motion } from "framer-motion"
 import FadeIn from '../FadeIn'
 import Typewriter from '../Typewriter'
 import Link from 'next/link'
-import useWindowSize from '../hooks/useWindowSize'
+import {useWindowSize} from '../hooks/useWindowSize'
 
 
 const Circles = () => {
