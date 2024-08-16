@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Spotlight } from "../ui/Spotlight"
 import { useEffect, useRef, useState } from "react"
 import { Playfair_Display } from "next/font/google"
+import { ArrowDownTrayIcon } from "@heroicons/react/20/solid"
 const playfair = Playfair_Display({ subsets: ['latin'] })
 
 const EmailIcon = (props:any) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" {...props}>
@@ -112,7 +113,12 @@ export default function Hero() {
                   }}
                   whileTap={{ scale: 0.9 }}
                 className='bg-black border-2 border-white text-gray-300 px-4 py-2 text-lg mt-10 '>
-                  <Link href="/Faznaharees_Resume.pdf" download>Resume icon</Link>
+                  <Link target="_blank" href="/Faznaharees_Resume.pdf" download>
+                  <div className="flex gap-x-2 items-end">
+                  <ArrowDownTrayIcon className="w-6 h-6 fill-gray-300" />
+                    Resume 
+                  </div>
+                  </Link>
                 </motion.button>
                 
                 <div className="flex justify-start items-center gap-x-4 mt-10 text-white">
