@@ -35,9 +35,9 @@ export default function Navbar() {
     }
   return (
     <div className='fixed top-0 left-0 w-full z-50 bg-transparent'>
-        <div className='flex flex-row justify-center items-center px-4 sm:px-10 py-4'>
-            <div className='flex flex-row gap-x-8 items-center bg-black px-6 py-2 rounded-full'>
-                {items.map((item,index)=><button onClick={() => scroll(item.link)}  className='text-lg sm:text-xl font-semibold tracking-tight text-white hover:text-indigo-700'>{item.name}</button>)}
+        <div className='flex flex-row justify-center items-center px-4 sm:px-10 py-0 sm:py-4'>
+            <div className='flex flex-row gap-x-8 items-center bg-black px-6 py-2 sm:rounded-full'>
+                {items.map((item,index)=><button onClick={() => scroll(item.link)}  className='text-md sm:text-xl font-semibold tracking-tight text-white hover:text-indigo-200'>{item.name}</button>)}
             </div>
             </div>
         </div>

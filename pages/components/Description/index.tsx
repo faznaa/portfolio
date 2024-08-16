@@ -67,12 +67,12 @@ Hi there, I'm <span className={`italic text-white font-playfair font-bold text-[
              <motion.div 
           style={{ scale ,translateX}}
 
-          className='grid sm:grid-cols-2 gap-4 '>
+          className='grid grid-cols-2 gap-4 '>
             <div className='flex flex-col items-end justify-center gap-4 '>
               <div className='overflow-hidden bg-white-100  w-56 h-36 rounded-3xl'>
                 <CardImage src="https://i.pinimg.com/736x/32/9a/d8/329ad85f4ab2047cae13d582274f9270.jpg" />
               </div>
-              <div className='overflow-hidden  w-32 h-36  rounded-3xl'>
+              <div className='overflow-hidden  w-32 h-36   rounded-3xl'>
                 <CardImage src="https://cdn.worldvectorlogo.com/logos/react-1.svg" />
               </div>
               <div className='overflow-hidden  w-36 h-48  rounded-3xl'>
