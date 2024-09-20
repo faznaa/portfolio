@@ -22,6 +22,7 @@ export default function Home() {
         <meta name="description"
         content='Need your website ready? I can help you with that. I am a fullstack developer based in Bangalore, IN. I specialize in creating responsive websites, landing pages and AI Chatbots.' />
       </Head>
+      <div className='w-screen overflow-x-hidden'>
       <Navbar />
       <Hero />
       <Description />
@@ -31,6 +32,7 @@ export default function Home() {
       <Projects />
       <Services />
       <Hire />
+      </div>
 
     </div>
   )

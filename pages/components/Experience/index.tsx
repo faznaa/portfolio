@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const MyCard = ({ data } :any) => {
     return ( <CardContainer className="inter-var">
-        <CardBody className=" relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto  h-auto rounded-xl p-6 border  ">
+        <CardBody className=" relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black border-white/[0.2]  w-auto  h-auto rounded-xl p-3 sm:p-6 border  ">
           <CardItem
             translateZ="50"
             className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -42,7 +42,7 @@ const MyCard = ({ data } :any) => {
             </div>
 
           </CardItem>
-          <div className="flex justify-between items-center mt-20">
+          <div className="flex justify-between items-center mt-5 sm:mt-20">
             <CardItem
               translateZ={20}
             //   as={Link}
@@ -151,7 +151,7 @@ const experience = [
         {/* </div> */}
 
             <div className='w-screen flex justify-center h-[500px] sm:h-[800px] overflow-scroll scrollbar-hide'>
-            <div className='  px-20  flex flex-col w-full sm:max-w-3xl justify-between sm:gap-x-6 items-center sm:items-start'>
+            <div className=' px-4 sm:px-20  flex flex-col w-full sm:max-w-3xl justify-between sm:gap-x-6 items-center sm:items-start'>
             {experience.map((exp,index)=><MyCard data={exp}/>)}
 
             </div>

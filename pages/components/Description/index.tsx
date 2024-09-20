@@ -69,30 +69,30 @@ Hi there, I'm <span className={`italic text-white font-playfair font-bold text-[
 
           className='grid grid-cols-2 gap-4 '>
             <div className='flex flex-col items-end justify-center gap-4 '>
-              <div className='overflow-hidden bg-white-100  w-56 h-36 rounded-3xl'>
+              <div className='overflow-hidden bg-white-100 sm:w-56 sm:h-36 rounded-3xl'>
                 <CardImage src="https://i.pinimg.com/736x/32/9a/d8/329ad85f4ab2047cae13d582274f9270.jpg" />
               </div>
-              <div className='overflow-hidden  w-32 h-36   rounded-3xl'>
+              <div className='overflow-hidden w-16 h-18 sm:w-32 sm:h-36   rounded-3xl'>
                 <CardImage src="https://cdn.worldvectorlogo.com/logos/react-1.svg" />
               </div>
-              <div className='overflow-hidden  w-36 h-48  rounded-3xl'>
+              <div className='overflow-hidden  w-18 h-28 sm:w-36 sm:h-48  rounded-3xl'>
               <CardImage src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg" />
 
               </div>
             </div>
             <div className='flex flex-col items-start justify-center gap-4'>
-              <div className='overflow-hidden  w-32 h-32  rounded-3xl'>
+              <div className='overflow-hidden  sm:w-32 sm:h-32  rounded-3xl'>
                <CardImage             
                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVJ6NBK_AkNji84Qjx1s1hzHhl1UZwSygzsQ&s" 
                />
 
               </div>
-              <div className='overflow-hidden bg-gray-600 w-36 h-24 rounded-3xl'>
+              <div className='overflow-hidden bg-gray-600 sm:w-36 sm:h-24 rounded-3xl'>
               <CardImage 
               src="https://logowik.com/content/uploads/images/openai5002.jpg"/>
 
               </div>
-              <div className='overflow-hidden bg-gray-100 w-48 h-36 rounded-3xl'>
+              <div className='overflow-hidden bg-gray-100 sm:w-48 sm:h-36 rounded-3xl'>
               <CardImage src="https://i.pinimg.com/1200x/bc/c9/fc/bcc9fce91549fb9f1295e6e4ee84d66e.jpg" />
               </div>
             </div>
