@@ -12,6 +12,20 @@ const projects = [
         tags:['web']
     },
     {
+      link:'https://automation-app-frontend-5573d966a347.herokuapp.com/',
+      img:"/assets/safootball.png",
+        title:"SA Footballer Stats",
+        description:"A website for scraping content from website and customizing it for digital magazines. It also creates blogs from given data.",
+        tags:['ai','web']
+    },
+    {
+      link:'https://frameinfill.com/',
+      img:"/assets/frameinfill1.png",
+        title:"FrameInfill",
+        description:"A housing company landing page for the construction company. ",
+        tags:['ai','web']
+    },
+    {
       link:'',
       img:'/assets/resurge.gif',
       title:'Medical Chat Bot',
